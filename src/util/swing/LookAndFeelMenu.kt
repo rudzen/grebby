@@ -15,7 +15,6 @@ class LookAndFeelMenu(private val frame: JFrame) : JMenu("Look and Feel"), Actio
             item.addActionListener(this)
             this.add(item)
         }
-
     }
 
     override fun actionPerformed(e: ActionEvent) {
@@ -33,7 +32,6 @@ class LookAndFeelMenu(private val frame: JFrame) : JMenu("Look and Feel"), Actio
                 }
             }
         }
-
     }
 
     companion object {
@@ -45,7 +43,6 @@ class LookAndFeelMenu(private val frame: JFrame) : JMenu("Look and Feel"), Actio
             } catch (exception: Exception) {
                 JOptionPane.showMessageDialog(null, ERROR_MESSAGE, null, 0)
             }
-
         }
 
         fun setDefaultSystemLookAndFeel() {

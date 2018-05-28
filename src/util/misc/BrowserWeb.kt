@@ -19,7 +19,6 @@ class BrowserWeb {
             } catch (exception: Exception) {
                 exception.printStackTrace()
             }
-
         }
     }
 }
