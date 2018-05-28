@@ -1,2 +1,2 @@
 # grebby
-Simplistic grebish gui
+Simplistic grebish gui written in Kotlin w. Swing (just for the practice).
