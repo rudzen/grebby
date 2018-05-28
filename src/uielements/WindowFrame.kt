@@ -8,7 +8,7 @@ import java.awt.*
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 
-class GrebbyBrochure : JFrame(Resources.TITLE), ActionListener {
+class WindowFrame : JFrame(Resources.TITLE), ActionListener {
     private val quit: JMenuItem
 
     init {

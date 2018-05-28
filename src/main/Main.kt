@@ -1,12 +1,12 @@
 package main
 
-import uielements.GrebbyBrochure
+import uielements.WindowFrame
 
 object Main {
 
     @JvmStatic
     fun main(args: Array<String>) {
-        GrebbyBrochure().isVisible = true
+        WindowFrame().isVisible = true
     }
 
 }
