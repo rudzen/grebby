@@ -16,8 +16,8 @@ class BrowserWeb {
                     os == "Mac OS X" -> runtime.exec("open -a Safari.app $path")
                     os.substring(0, 3) == "Win" -> runtime.exec("cmd.exe /C start $path")
                 }
-            } catch (var5: Exception) {
-                var5.printStackTrace()
+            } catch (exception: Exception) {
+                exception.printStackTrace()
             }
 
         }

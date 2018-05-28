@@ -28,7 +28,7 @@ class LookAndFeelMenu(private val frame: JFrame) : JMenu("Look and Feel"), Actio
                 try {
                     UIManager.setLookAndFeel(lookAndFeelInfo.className)
                     SwingUtilities.updateComponentTreeUI(this.frame)
-                } catch (var7: Exception) {
+                } catch (exception: Exception) {
                     JOptionPane.showMessageDialog(null, "Look and Feel error !!!", null, 0)
                 }
             }
@@ -42,8 +42,8 @@ class LookAndFeelMenu(private val frame: JFrame) : JMenu("Look and Feel"), Actio
         fun setDefaultCrossPlatformLookAndFeel() {
             try {
                 UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName())
-            } catch (var1: Exception) {
-                JOptionPane.showMessageDialog(null, "Look and Feel error !!!", null, 0)
+            } catch (exception: Exception) {
+                JOptionPane.showMessageDialog(null, ERROR_MESSAGE, null, 0)
             }
 
         }
@@ -51,8 +51,8 @@ class LookAndFeelMenu(private val frame: JFrame) : JMenu("Look and Feel"), Actio
         fun setDefaultSystemLookAndFeel() {
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
-            } catch (var1: Exception) {
-                JOptionPane.showMessageDialog(null, "Look and Feel error !!!", null, 0)
+            } catch (exception: Exception) {
+                JOptionPane.showMessageDialog(null, ERROR_MESSAGE, null, 0)
             }
 
         }

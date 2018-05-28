@@ -105,8 +105,8 @@ class Panel : JPanel(), ActionListener {
                     }
 
                     input.close()
-                } catch (var10: Exception) {
-                    var10.printStackTrace()
+                } catch (exception: Exception) {
+                    exception.printStackTrace()
                 }
 
             }
